@@ -1,0 +1,18 @@
+{
+  "symbols": {},
+  "glue": {
+    "FcConfig": {"methods": ["pointer", "fromPointer"]},
+    "FcPattern": {"methods": ["pointer", "fromPointer"]},
+    "FcFontSet": {"methods": ["pointer", "fromPointer"]},
+    "FcCharSet": {"methods": ["pointer", "fromPointer"]}
+  },
+  "helpers": {
+    "marshal": ["phpfc_live_pattern"],
+    "translate": []
+  },
+  "sites": {
+    "fontconfig-null-pattern": {"kind": "refusal", "outcome": 1, "probe": "tests/Probes/NullPatternTest.php"},
+    "fontconfig-null-record": {"kind": "refusal", "outcome": 1, "probe": "tests/Probes/NullRecordTest.php"}
+  },
+  "typemap": {}
+}

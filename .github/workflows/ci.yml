@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: PHP ${{ matrix.php }} ${{ matrix.ts }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-15]
+        php: ['8.4', '8.5']
+        ts: [nts, zts]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: none
+        env:
+          phpts: ${{ matrix.ts == 'zts' && 'ts' || 'nts' }}
+
+      - name: Install fontconfig (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libfontconfig-dev
+
+      - name: Install fontconfig (macOS)
+        if: runner.os == 'macOS'
+        run: brew install fontconfig pkgconf
+
+      - name: Build
+        run: |
+          phpize
+          ./configure --enable-fontconfig
+          make -j"$(nproc 2>/dev/null || sysctl -n hw.ncpu)"
+
+      - name: Load
+        run: |
+          php -n -d extension="$PWD/modules/fontconfig.so" -r 'exit(extension_loaded("fontconfig") ? 0 : 1);'
+          php -n -d extension="$PWD/modules/fontconfig.so" --ri fontconfig
