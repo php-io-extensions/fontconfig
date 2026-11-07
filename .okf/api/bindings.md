@@ -5,7 +5,7 @@ description: Every bound fontconfig function, handle and constant group, by the 
 resource: stubs/
 tags: [fontconfig, api]
 status: draft
-generated: { by: claude/opus-5.5, at: 2026-11-05T12:00:00-05:00 }
+generated: { by: claude/opus-5.5, at: 2026-11-05T18:00:00-05:00 }
 sources:
   - id: stubs
     resource: stubs/
@@ -16,7 +16,7 @@ sources:
 
 | Stub | C file | Functions | Classes |
 |---|---|---|---|
-| `fontconfig.stub.php` | `src/fontconfig.c` | — | — (constants: 57 `FC_*` property names, `FcMatch*`, `FcResult*`) |
+| `fontconfig.stub.php` | `src/fontconfig.c` | — | — (constants: 57 `FC_*` property names, the 19 `FC_WEIGHT_*` and 3 `FC_SLANT_*` values, `FcMatch*`, `FcResult*`) |
 | `FcPattern.stub.php` | `src/FcPattern.c` | `FcNameParse`, `FcPatternDestroy`, `FcPatternGetString`, `FcPatternGetInteger`, `FcPatternGetCharSet`, `FcCharSetHasChar`, `FcCharSetDestroy` | `FcPattern`, `FcCharSet` |
 | `FcConfig.stub.php` | `src/FcConfig.c` | `FcInitLoadConfigAndFonts`, `FcConfigDestroy`, `FcConfigSubstitute`, `FcDefaultSubstitute`, `FcFontMatch`, `FcFontSort`, `FcFontSetDestroy` | `FcConfig`, `FcFontSet` |
 

@@ -7,3 +7,4 @@
 * **Shared patterns**: two `FcFontSort` sets share the config's patterns; a pattern is released only when its last owning set is (`owners`), so destroying one set leaves the other's patterns usable.
 * **Handle runtime**: identity is keyed by address and class, so a `fromPointer()` of another class does not clear a live handle. A parent drops destroyed children when it gains a new one, and `get_gc` reports its children. `FcFontSet` answers `isset()`, `empty()` and `var_dump()` from the set. Handler tables are static per class, with no fixed limit.
 * **Coverage**: `scripts/support.php` counts every `FcPublic … name (` of `fontconfig.h` and `fcfreetype.h` at the 2.15.0 tag.
+* **Weight and slant values**: the `FC_WEIGHT_*` (19) and `FC_SLANT_*` (3) constants of `fontconfig.h` (lines 145–167 at 2.15.0), as `@cvalue` ints. [bindings](api/bindings.md).

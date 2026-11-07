@@ -27,6 +27,138 @@ const FC_SLANT = UNKNOWN;
 const FC_WEIGHT = UNKNOWN;
 
 /**
+ * @var int
+ * @cvalue FC_WEIGHT_THIN
+ */
+const FC_WEIGHT_THIN = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_EXTRALIGHT
+ */
+const FC_WEIGHT_EXTRALIGHT = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_ULTRALIGHT
+ */
+const FC_WEIGHT_ULTRALIGHT = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_LIGHT
+ */
+const FC_WEIGHT_LIGHT = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_DEMILIGHT
+ */
+const FC_WEIGHT_DEMILIGHT = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_SEMILIGHT
+ */
+const FC_WEIGHT_SEMILIGHT = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_BOOK
+ */
+const FC_WEIGHT_BOOK = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_REGULAR
+ */
+const FC_WEIGHT_REGULAR = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_NORMAL
+ */
+const FC_WEIGHT_NORMAL = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_MEDIUM
+ */
+const FC_WEIGHT_MEDIUM = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_DEMIBOLD
+ */
+const FC_WEIGHT_DEMIBOLD = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_SEMIBOLD
+ */
+const FC_WEIGHT_SEMIBOLD = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_BOLD
+ */
+const FC_WEIGHT_BOLD = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_EXTRABOLD
+ */
+const FC_WEIGHT_EXTRABOLD = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_ULTRABOLD
+ */
+const FC_WEIGHT_ULTRABOLD = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_BLACK
+ */
+const FC_WEIGHT_BLACK = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_HEAVY
+ */
+const FC_WEIGHT_HEAVY = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_EXTRABLACK
+ */
+const FC_WEIGHT_EXTRABLACK = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_WEIGHT_ULTRABLACK
+ */
+const FC_WEIGHT_ULTRABLACK = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_SLANT_ROMAN
+ */
+const FC_SLANT_ROMAN = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_SLANT_ITALIC
+ */
+const FC_SLANT_ITALIC = UNKNOWN;
+
+/**
+ * @var int
+ * @cvalue FC_SLANT_OBLIQUE
+ */
+const FC_SLANT_OBLIQUE = UNKNOWN;
+
+/**
  * @var string
  * @cvalue FC_SIZE
  */
