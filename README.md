@@ -135,7 +135,7 @@ $ php --ri fontconfig
 fontconfig
 
 fontconfig support => enabled
-Version => 0.11.0
+Version => 0.11.1
 fontconfig headers => 2.18.3
 fontconfig library => 2.18.3
 ```

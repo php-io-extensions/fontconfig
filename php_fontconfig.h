@@ -4,7 +4,7 @@
 extern zend_module_entry fontconfig_module_entry;
 #define phpext_fontconfig_ptr &fontconfig_module_entry
 
-#define PHP_FONTCONFIG_VERSION "0.11.0"
+#define PHP_FONTCONFIG_VERSION "0.11.1"
 
 #if defined(ZTS) && defined(COMPILE_DL_FONTCONFIG)
 ZEND_TSRMLS_CACHE_EXTERN()

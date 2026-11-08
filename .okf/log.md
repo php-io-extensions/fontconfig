@@ -1,5 +1,9 @@
 # Log
 
+## 2026-11-08
+
+* **Version**: 0.11.1 in `PHP_FONTCONFIG_VERSION` (`php_fontconfig.h`) and the README's phpinfo block; nothing else changed.
+
 ## 2026-11-05
 
 * Bundle created with ext-fontconfig 0.11.0: 14 functions at the fontconfig 2.15.0 API, the floor (Ubuntu 24.04's fontconfig): configuration, name parsing, substitution, matching, sorting, pattern getters for strings, integers and charsets, `FcCharSetHasChar`, and the destroy calls. `FcCharSetDestroy` is bound because `FcFontSort` hands the caller a charset. Built on Homebrew PHP 8.4 NTS and ZTS against fontconfig 2.18.3, and on Ubuntu against 2.15.0. [bindings](api/bindings.md), [handles](architecture/handles.md), [build](runbooks/build.md).
