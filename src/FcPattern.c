@@ -124,6 +124,17 @@ ZEND_FUNCTION(FcCharSetDestroy)
 	phpfc_release(Z_OBJ_P(fcs));
 }
 
+ZEND_FUNCTION(FcWeightFromOpenTypeDouble)
+{
+	double ot_weight;
+
+	ZEND_PARSE_PARAMETERS_START(1, 1)
+		Z_PARAM_DOUBLE(ot_weight)
+	ZEND_PARSE_PARAMETERS_END();
+
+	RETURN_DOUBLE(FcWeightFromOpenTypeDouble(ot_weight));
+}
+
 void phpfc_register_FcPattern(int module_number)
 {
 	(void) module_number;

@@ -45,3 +45,5 @@ function FcPatternGetCharSet(FcPattern $p, string $object, int $n, ?FcCharSet &$
 function FcCharSetHasChar(FcCharSet $fcs, int $ucs4): bool {}
 
 function FcCharSetDestroy(FcCharSet $fcs): void {}
+
+function FcWeightFromOpenTypeDouble(float $ot_weight): float {}

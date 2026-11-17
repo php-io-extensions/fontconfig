@@ -1,5 +1,5 @@
 /* This is a generated file, edit the .stub.php file instead.
- * Stub hash: 5086259493bc9e858e247d728fb2b6584101728f */
+ * Stub hash: 70cae5af45d428cb561ba56de0276196dc0b1c8a */
 
 ZEND_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(arginfo_FcNameParse, 0, 1, FcPattern, 1)
 	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
@@ -39,6 +39,10 @@ ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_FcCharSetDestroy, 0, 1, IS_VOID,
 	ZEND_ARG_OBJ_INFO(0, fcs, FcCharSet, 0)
 ZEND_END_ARG_INFO()
 
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_FcWeightFromOpenTypeDouble, 0, 1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ot_weight, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
 ZEND_BEGIN_ARG_INFO_EX(arginfo_class_FcPattern___construct, 0, 0, 0)
 ZEND_END_ARG_INFO()
 
@@ -62,6 +66,7 @@ ZEND_FUNCTION(FcPatternGetInteger);
 ZEND_FUNCTION(FcPatternGetCharSet);
 ZEND_FUNCTION(FcCharSetHasChar);
 ZEND_FUNCTION(FcCharSetDestroy);
+ZEND_FUNCTION(FcWeightFromOpenTypeDouble);
 ZEND_METHOD(FcPattern, __construct);
 ZEND_METHOD(FcPattern, pointer);
 ZEND_METHOD(FcPattern, fromPointer);
@@ -77,6 +82,7 @@ static const zend_function_entry ext_functions[] = {
 	ZEND_FE(FcPatternGetCharSet, arginfo_FcPatternGetCharSet)
 	ZEND_FE(FcCharSetHasChar, arginfo_FcCharSetHasChar)
 	ZEND_FE(FcCharSetDestroy, arginfo_FcCharSetDestroy)
+	ZEND_FE(FcWeightFromOpenTypeDouble, arginfo_FcWeightFromOpenTypeDouble)
 	ZEND_FE_END
 };
 

@@ -6,7 +6,7 @@
 
 
 [![CI](https://img.shields.io/github/actions/workflow/status/php-io-extensions/fontconfig/ci.yml?style=flat-square&label=CI)](https://github.com/php-io-extensions/fontconfig/actions/workflows/ci.yml)
-[![fontconfig API](https://img.shields.io/badge/fontconfig_API-6.0%25_%2814%2F232%29-blue?style=flat-square)](SUPPORT.md)
+[![fontconfig API](https://img.shields.io/badge/fontconfig_API-6.5%25_%2815%2F232%29-blue?style=flat-square)](SUPPORT.md)
 [![Packagist](https://img.shields.io/packagist/v/php-io-extensions/fontconfig?style=flat-square)](https://packagist.org/packages/php-io-extensions/fontconfig)
 [![PHP](https://img.shields.io/packagist/dependency-v/php-io-extensions/fontconfig/php?style=flat-square&label=PHP)](https://packagist.org/packages/php-io-extensions/fontconfig)
 [![License](https://img.shields.io/github/license/php-io-extensions/fontconfig?style=flat-square)](LICENSE)
@@ -142,12 +142,12 @@ fontconfig library => 2.18.3
 
 ## API
 
-Function, handle and constant names are the C names, so [fontconfig's developer reference](https://www.freedesktop.org/software/fontconfig/fontconfig-devel/) is the reference: 14 functions, one stub per group in [`stubs/`](stubs), each declared with its PHP types. [SUPPORT.md](SUPPORT.md) lists every function fontconfig 2.15.0 declares in `fontconfig.h` and `fcfreetype.h`, bound or not; the API badge is computed from it.
+Function, handle and constant names are the C names, so [fontconfig's developer reference](https://www.freedesktop.org/software/fontconfig/fontconfig-devel/) is the reference: 15 functions, one stub per group in [`stubs/`](stubs), each declared with its PHP types. [SUPPORT.md](SUPPORT.md) lists every function fontconfig 2.15.0 declares in `fontconfig.h` and `fcfreetype.h`, bound or not; the API badge is computed from it.
 
 | Stub | Functions | What it covers |
 |---|---|---|
 | `FcConfig` | 7 | `FcInitLoadConfigAndFonts()`, `FcConfigDestroy()`, `FcConfigSubstitute()`, `FcDefaultSubstitute()`, `FcFontMatch()`, `FcFontSort()`, `FcFontSetDestroy()`; the `FcConfig` and `FcFontSet` handles. |
-| `FcPattern` | 7 | `FcNameParse()`, `FcPatternDestroy()`, `FcPatternGetString()`, `FcPatternGetInteger()`, `FcPatternGetCharSet()`, `FcCharSetHasChar()`, `FcCharSetDestroy()`; the `FcPattern` and `FcCharSet` handles. |
+| `FcPattern` | 8 | `FcNameParse()`, `FcPatternDestroy()`, `FcPatternGetString()`, `FcPatternGetInteger()`, `FcPatternGetCharSet()`, `FcCharSetHasChar()`, `FcCharSetDestroy()`, `FcWeightFromOpenTypeDouble()`; the `FcPattern` and `FcCharSet` handles. |
 | `fontconfig` | — | The `FC_*` property names, the `FcMatch*` kinds and the `FcResult*` values. |
 
 ### Translations
@@ -212,7 +212,7 @@ PHP_INI_SCAN_DIR=":/tmp/fontconfig-ini" php -d memory_limit=128M vendor/bin/pest
 ```
 
 ```console
-Tests:    4 skipped, 14 passed (44 assertions)
+Tests:    4 skipped, 46 passed (101 assertions)
 Duration: 0.21s
 ```
 

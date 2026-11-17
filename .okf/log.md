@@ -1,5 +1,9 @@
 # Log
 
+## 2026-11-16
+
+* **Weight conversion**: `FcWeightFromOpenTypeDouble` bound in `FcPattern.stub.php`, beside the other pattern-value calls. It turns an OpenType or CSS weight (1..1000) into the value `FC_WEIGHT` holds (0..215), as fontconfig itself does for a face's `usWeightClass`. It passes through: a negative weight gives -1, and a weight past 1000 gives 215. [bindings](api/bindings.md).
+
 ## 2026-11-08
 
 * **Version**: 0.11.1 in `PHP_FONTCONFIG_VERSION` (`php_fontconfig.h`) and the README's phpinfo block; nothing else changed.
